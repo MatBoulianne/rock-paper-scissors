@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Rock Paper Scissors</title>
+</head>
+<body>
+	<header>
+		<h1>Rock Paper Scissors</h1>
+	</header>
+
+	<div class="form-container">
+		<div>
+			<label>Number of rounds</label> <br>
+			<input type="number" id="roundsInput" value=''>
+		</div>
+		<div>
+			<button class="btn" id="startBtn">Start</button>
+		</div>
+	</div>
+
+	<div class="score-container">
+		<div>
+			<h2>Scoreboard</h2>
+			<h3><span id="currentScorePlayer">0</span> - <span id="currentScoreCPU">0</span></h3>
+		</div>
+		<div>
+			<h2>Round <span id="roundNumber">1</span></h2>
+		</div>
+		<div>
+			<button class="btn" id="restartBtn"><a href="index.html"> Restart</a></button>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="body-left">
+			<div class="column-top">
+				<h3>Player</h3>
+			</div>
+			<div class="column-side">
+				<ul>
+					<li class="choice rockPlayer">ROCK</li>
+					<li class="choice paperPlayer">PAPER</li>
+					<li class="choice scissorsPlayer">SCISSORS</li>
+				</ul>
+				<img src="img/winner2.gif" class="img-winner img-result">
+				<img src="img/loser2.jpeg" class="img-loser img-result">
+				<img src="img/draw2.jpg" class="img-draw img-result">
+			</div>
+		</div>
+
+		<div class="body-center">
+			<h2><span id="roundResult"></span></h2>
+			<div class="img-box">
+			<div class="img-left">
+				<img src="img/transparent.png" class="img-player">
+			</div>
+			<div class="img-right">
+				<img src="img/transparent.png" class="img-computer">
+			</div>
+			</div>
+		</div>
+
+		<div class="body-right">
+			<div class="column-top">
+				<h3>HAL 9000</h3>
+			</div>
+			<div class="column-side">
+				<!--<ul>
+					<li class="choice">ROCK</li>
+					<li class="choice">PAPER</li>
+					<li class="choice">SCISSORS</li>
+				</ul> -->
+				<img src="img/hal9000.png">
+			</div>
+		</div>
+
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>
